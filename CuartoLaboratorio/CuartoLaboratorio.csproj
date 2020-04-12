@@ -32,6 +32,19 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EmptyInterface.cs" />
+    <Compile Include="CentralComputer.cs" />
+    <Compile Include="Machine1.cs" />
+    <Compile Include="Machine2.cs" />
+    <Compile Include="Machine3.cs" />
+    <Compile Include="Machine4.cs" />
+    <Compile Include="Machine5.cs" />
+    <Compile Include="IMemory.cs" />
+    <Compile Include="IReception.cs" />
+    <Compile Include="IStorage.cs" />
+    <Compile Include="IAssembly.cs" />
+    <Compile Include="ICheck.cs" />
+    <Compile Include="IPacking.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
