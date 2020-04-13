@@ -32,7 +32,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="EmptyInterface.cs" />
     <Compile Include="CentralComputer.cs" />
     <Compile Include="Machine1.cs" />
     <Compile Include="Machine2.cs" />
