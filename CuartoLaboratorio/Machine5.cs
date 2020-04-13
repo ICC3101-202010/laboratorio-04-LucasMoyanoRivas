@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CuartoLaboratorio
 {
-    public class Machine5 : CentralComputer, IMemory, IPacking
+    public class Machine5 : CentralComputer, IPacking
     {
         private int memorycapacity;
         public Machine5(int memorycapacity)
@@ -10,21 +10,20 @@ namespace CuartoLaboratorio
         }
         public override string turnon()
         {
-            throw new NotImplementedException();
+            string message = "Se ha encendido la maquina de empaque";
+            return message;
         }
         public override string turnoff()
         {
-            throw new NotImplementedException();
+            string message = "Se ha apagado la maquina de empaque";
+            return message;
         }
         public override string restart()
         {
-            throw new NotImplementedException();
+            string message = "Se ha reiniciado la maquina de empaque";
+            return message;
         }
         public void Packing(Machine4 machine4)
-        {
-
-        }
-        public void memory(int memorycapacity)
         {
 
         }

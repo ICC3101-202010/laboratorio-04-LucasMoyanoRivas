@@ -1,32 +1,29 @@
 ﻿using System;
 namespace CuartoLaboratorio
 {
-    public class Machine1 : CentralComputer, IMemory, IReception
+    public class Machine1 : CentralComputer, IReception
     {
-        private int piezas;
         private int memorycapacity;
-        public Machine1(int piezas, int memorycapacity)
+        public Machine1(int memorycapacity)
         {
-            this.piezas = piezas;
             this.memorycapacity = memorycapacity;
         }
         public override string turnon()
         {
-            throw new NotImplementedException();
+            string message = "Se ha encendido la maquina de recepcion";
+            return message;
         }
         public override string turnoff()
         {
-            throw new NotImplementedException();
+            string message = "Se ha apagado la maquina de recepcion";
+            return message;
         }
         public override string restart()
         {
-            throw new NotImplementedException();
+            string message = "Se ha reiniciado la maquina de recepcion";
+            return message;
         }
-        public void Reception(int piezas)
-        {
-
-        }
-        public void memory(int memorycapacity)
+        public void Reception()
         {
 
         }

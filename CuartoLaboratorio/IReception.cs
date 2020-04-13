@@ -3,6 +3,6 @@ namespace CuartoLaboratorio
 {
     public interface IReception
     {
-        void Reception(int piezas);
+        void Reception();
     }
 }

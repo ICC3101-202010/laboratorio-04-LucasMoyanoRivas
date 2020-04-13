@@ -39,7 +39,6 @@
     <Compile Include="Machine3.cs" />
     <Compile Include="Machine4.cs" />
     <Compile Include="Machine5.cs" />
-    <Compile Include="IMemory.cs" />
     <Compile Include="IReception.cs" />
     <Compile Include="IStorage.cs" />
     <Compile Include="IAssembly.cs" />

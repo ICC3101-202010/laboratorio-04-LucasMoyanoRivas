@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CuartoLaboratorio
 {
-    public class Machine3 : CentralComputer, IMemory, IAssembly
+    public class Machine3 : CentralComputer, IAssembly
     {
         private int memorycapacity;
         public Machine3(int memorycapacity)
@@ -10,21 +10,20 @@ namespace CuartoLaboratorio
         }
         public override string turnon()
         {
-            throw new NotImplementedException();
+            string message = "Se ha encendido la maquina de ensamblaje";
+            return message;
         }
         public override string turnoff()
         {
-            throw new NotImplementedException();
+            string message = "Se ha apagado la maquina de ensamblaje";
+            return message;
         }
         public override string restart()
         {
-            throw new NotImplementedException();
+            string message = "Se ha reiniciado la maquina de ensamblaje";
+            return message;
         }
         public void Assembly(Machine2 machine2)
-        {
-
-        }
-        public void memory(int memorycapacity)
         {
 
         }

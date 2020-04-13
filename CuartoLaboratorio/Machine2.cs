@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CuartoLaboratorio
 {
-    public class Machine2 : CentralComputer, IMemory, IStorage
+    public class Machine2 : CentralComputer, IStorage
     {
         private int memorycapacity;
         public Machine2(int memorycapacity)
@@ -10,21 +10,20 @@ namespace CuartoLaboratorio
         }
         public override string turnon()
         {
-            throw new NotImplementedException();
+            string message = "Se ha encendido la maquina de almacenamiento";
+            return message;
         }
         public override string turnoff()
         {
-            throw new NotImplementedException();
+            string message = "Se ha apagado la maquina de almacenamiento";
+            return message;
         }
         public override string restart()
         {
-            throw new NotImplementedException();
+            string message = "Se ha reiniciado la maquina de almacenamiento";
+            return message;
         }
-        public void Storage(Machine1 machine1)
-        {
-
-        }
-        public void memory(int memorycapacity)
+        public void Storage(Machine1 machine)
         {
 
         }
