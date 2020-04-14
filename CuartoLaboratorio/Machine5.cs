@@ -5,6 +5,7 @@ namespace CuartoLaboratorio
     {
         private int memorycapacity;
         private int piezas;
+        private int memorycapacityinitial;
         public Machine5(int memorycapacity, int piezas)
         {
             this.memorycapacity = memorycapacity;
@@ -13,6 +14,7 @@ namespace CuartoLaboratorio
         public override string turnon()
         {
             string message = $"de empaque con una memoria de {memorycapacity}";
+            memorycapacityinitial = memorycapacity;
             return message;
         }
         public override string turnoff()
@@ -23,6 +25,7 @@ namespace CuartoLaboratorio
         public override string restart()
         {
             string message = "de empaque";
+            memorycapacity = memorycapacityinitial;
             return message;
         }
         public void Packing()
