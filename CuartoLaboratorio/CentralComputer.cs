@@ -1,22 +1,27 @@
 ﻿using System;
 namespace CuartoLaboratorio
 {
-    public abstract class CentralComputer 
+    public abstract class CentralComputer
     {
         abstract public string turnon();
         abstract public string turnoff();
         abstract public string restart();
+        abstract public int GetMemory();
+        abstract public int GetPiezas();
         public void operationTurnon()
         {
-            Console.WriteLine($"Encender maquina: {turnon()}");
+            Console.WriteLine($"Se ha encendido la maquina {turnon()}");
         }
-        public void operationRestart()
+        public void operationRestart(int piezas)
         {
-            Console.WriteLine($"Reiniciar maquina: {restart()}");
+            if (GetMemory() == 0)
+            {
+                Console.WriteLine($"Se ha reiniciado la maquina {restart()}");
+            }
         }
         public void operationTurnoff()
         {
-            Console.WriteLine($"Apagar maquina: {turnoff()}");
+            Console.WriteLine($"Se apagado la maquina {turnoff()}");
         }
     }
 }

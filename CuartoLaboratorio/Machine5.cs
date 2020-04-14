@@ -4,28 +4,39 @@ namespace CuartoLaboratorio
     public class Machine5 : CentralComputer, IPacking
     {
         private int memorycapacity;
-        public Machine5(int memorycapacity)
+        private int piezas;
+        public Machine5(int memorycapacity, int piezas)
         {
             this.memorycapacity = memorycapacity;
+            this.piezas = piezas;
         }
         public override string turnon()
         {
-            string message = "Se ha encendido la maquina de empaque";
+            string message = $"de empaque con una memoria de {memorycapacity}";
             return message;
         }
         public override string turnoff()
         {
-            string message = "Se ha apagado la maquina de empaque";
+            string message = "de empaque";
             return message;
         }
         public override string restart()
         {
-            string message = "Se ha reiniciado la maquina de empaque";
+            string message = "de empaque";
             return message;
         }
-        public void Packing(Machine4 machine4)
+        public void Packing()
         {
-
+            Console.WriteLine($"Se ha empacado");
+            memorycapacity = memorycapacity - 1;
+        }
+        public override int GetMemory()
+        {
+            return memorycapacity;
+        }
+        public override int GetPiezas()
+        {
+            return piezas;
         }
     }
 }

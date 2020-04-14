@@ -3,6 +3,6 @@ namespace CuartoLaboratorio
 {
     public interface IStorage
     {
-        void Storage(Machine1 machine1);
+        void Storage();
     }
 }
