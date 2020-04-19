@@ -27,7 +27,13 @@ namespace CuartoLaboratorio
                 }
                 if (listmachine[0].GetMemory() == 0)
                 {
-                    listmachine[0].operationRestart(piezas);
+                    Console.WriteLine("A la maquina de Recepcion se le ha acabado la memoria");
+                    Console.WriteLine("Desea reiniciarla? (si/no)");
+                    string answer = Console.ReadLine();
+                    if (answer == "si")
+                    {
+                        listmachine[0].operationRestart(piezas);
+                    }
                 }
                 if (listmachine[1].GetMemory() > 0)
                 {
@@ -35,7 +41,13 @@ namespace CuartoLaboratorio
                 }
                 if (listmachine[1].GetMemory() == 0)
                 {
-                    listmachine[1].operationRestart(piezas);
+                    Console.WriteLine("A la maquina de Almacenamiento se le ha acabado la memoria");
+                    Console.WriteLine("Desea reiniciarla? (si/no)");
+                    string answer = Console.ReadLine();
+                    if (answer == "si")
+                    {
+                        listmachine[1].operationRestart(piezas);
+                    } 
                 }
                 if (listmachine[2].GetMemory() > 0)
                 {
@@ -43,7 +55,13 @@ namespace CuartoLaboratorio
                 }
                 if (listmachine[2].GetMemory() == 0)
                 {
-                    listmachine[2].operationRestart(piezas);
+                    Console.WriteLine("A la maquina de Ensamblaje se le ha acabado la memoria");
+                    Console.WriteLine("Desea reiniciarla? (si/no)");
+                    string answer = Console.ReadLine();
+                    if (answer == "si")
+                    {
+                        listmachine[2].operationRestart(piezas);
+                    }
                 }
                 if (listmachine[3].GetMemory() > 0)
                 {
@@ -51,7 +69,13 @@ namespace CuartoLaboratorio
                 }
                 if (listmachine[3].GetMemory() == 0)
                 {
-                    listmachine[3].operationRestart(piezas);
+                    Console.WriteLine("A la maquina de Verificacion se le ha acabado la memoria");
+                    Console.WriteLine("Desea reiniciarla? (si/no)");
+                    string answer = Console.ReadLine();
+                    if (answer == "si")
+                    {
+                        listmachine[3].operationRestart(piezas);
+                    }
                 }
                 if (listmachine[4].GetMemory() > 0)
                 {
@@ -59,7 +83,13 @@ namespace CuartoLaboratorio
                 }
                 if (listmachine[4].GetMemory() == 0)
                 {
-                    listmachine[4].operationRestart(piezas);
+                    Console.WriteLine("A la maquina de Empacado se le ha acabado la memoria");
+                    Console.WriteLine("Desea reiniciarla? (si/no)");
+                    string answer = Console.ReadLine();
+                    if (answer == "si")
+                    {
+                        listmachine[4].operationRestart(piezas);
+                    }
                 }
                 Console.WriteLine($"Lista pieza numero {i+1}");
             }
